@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta de Hogwarts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-buttons">
+            <!-- Botón para reproducir audio -->
+            <button id="playAudioButton" onclick="playAudio()">
+                <i class="fas fa-volume-up"></i>
+            </button>
+            
+            <!-- Botón para pausar audio -->
+            <button id="pauseAudioButton" onclick="pauseAudio()">
+                <i class="fas fa-pause"></i>
+            </button>
+            
+            <!-- Botón para disminuir el volumen -->
+            <button id="volumeDownButton" onclick="decreaseVolume()">
+                <i class="fas fa-volume-down"></i>
+            </button>
+        </div>        
+        <p class="titulo">Ruleta de Hogwarts</p>
+        <canvas id="canvas" width="600px" height="600px"></canvas>
+        <button onclick="spin()">Girar la ruleta</button>
+        <div id="resultado"></div>
+        <i class="fas fa-arrow-down fa-2x" id="flecha"></i>
+    </div>
+    <!-- Tabla para mostrar nombres de los personajes -->
+    <div class="scrollable-table">
+        <table id="personajesTabla">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se agregarán los nombres de los personajes -->
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="Winwheel.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Ganador!</title>
+    <link rel="stylesheet" href="ganador.css">
+</head>
+<body class="ganador-body">
+    <div class="container">
+        <div class="content">
+            <h6 id="nombreGanador" hidden></h6>
+            <img id="imagenGanador" src="" alt="Imagen del Ganador">
+            <div class="dialogo">
+                <img class="sombrero" src="/src/Sombrero_seleccionador.png" alt="Sombrero Seleccionador">
+                <div class="burbuja">
+                    <p>¿Estás preparado/a <span id="nombreGanadorSpan"></span> para saber de qué casa eres?</p>
+                </div>
+            </div>
+            <audio id="audio1" src="/src/Audios/Audio Random 1.mp3" style="display: none;"></audio>
+            <audio id="audio2" src="/src/Audios/Audio Random 2.mp3" style="display: none;"></audio>
+            <audio id="audio3" src="audio3.mp3" style="display: none;"></audio>
+            <audio id="audio4" src="audio4.mp3" style="display: none;"></audio>
+            
+            <button onclick="conocerCasa()">Conocer casa</button>
+            <div id="ventanaEmergente" class="ventana-emergente">
+                <div class="contenidoVentana">
+                    <span onclick="cerrarVentana()" class="cerrar">&times;</span>
+                    <p id="mensajeFelicidades"></p>
+                        <img src="" alt="Escudo de la Casa" id="escudoCasa">
+                        <audio id="audioCasa" src=""></audio>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <script src="ganador.js"></script>
+    </body>
+    </html>
+    

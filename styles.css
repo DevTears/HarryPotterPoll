@@ -1,0 +1,114 @@
+@font-face {
+    font-family: HarryP;
+    src: url('/src/harry_p/HARRYP__.TTF'),
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    background-image: url('/src/FondoHarry.jpg'); 
+    color: #ffffff;
+}
+
+.titulo {
+    font-family: 'HarryP', sans-serif;
+    font-size: 60px;
+    letter-spacing: 10px;
+    margin: 10px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    background-color: #d3a625;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.segmento {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    background-color: rgba(255, 0, 0, 0.7);
+    transform-origin: 0 50%;
+    transform: rotate(0deg) skewY(60deg);
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+#flecha {
+    position: absolute;
+    top: 17.3%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleX(-1);
+    color: rgb(255, 115, 0);
+}
+
+.scrollable-table {
+    max-height: 300px;
+    overflow-y:scroll; 
+}
+
+#personajesTabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#personajesTabla th,
+#personajesTabla td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#personajesTabla th {
+    background-color: #000000;
+}
+
+#personajesTabla tr:hover {
+    background-color: #ffffff49;
+}
+
+#personajesTabla td button {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#personajesTabla td button:hover {
+    background-color: #c82333;
+}
+
+.container-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-buttons button {
+    background-color: transparent;
+    border: none;
+    margin: 0 5px;
+}
+
