@@ -22,7 +22,7 @@ const personajes = [
     { nombre: "Osvaldo", casa: "Hufflepuff", escudo: "hufflepuff.png", audio: "hufflepuff.mp3" },
     { nombre: "Paula", casa: "Slytherin", escudo: "slytherin.png", audio: "slytherin.mp3" },
     { nombre: "Ivana", casa: "Gryffindor", escudo: "gryffindor.png", audio: "gryffindor.mp3" },
-    { nombre: "Eugenia", casa: "Slytherin", escudo: "slytherin.png", audio: "slytherin.mp3" },
+    { nombre: "Eugenia", casa: "Hufflepuff", escudo: "hufflepuff.png", audio: "hufflepuff.mp3" },
     { nombre: "David", casa: "Ravenclaw", escudo: "ravenclaw.png", audio: "ravenclaw.mp3" },
     { nombre: "Rodolfo", casa: "Hufflepuff", escudo: "hufflepuff.png", audio: "hufflepuff.mp3" },
     { nombre: "Lucia", casa: "Gryffindor", escudo: "gryffindor.png", audio: "gryffindor.mp3" },
